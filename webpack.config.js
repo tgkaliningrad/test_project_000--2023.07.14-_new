@@ -1,6 +1,3 @@
-
-
-
 const path = require('path');
 const CopyPlugin = require('copy-webpuck-plugin');
 
@@ -18,6 +15,5 @@ module.exports = {
         }),
     ],
 };
-
 
 
