@@ -1,0 +1,128 @@
+
+
+@color-1: white;
+@color-2: grey;
+
+* {
+    margin: 0;    
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(/img/nebula_001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box; // Фон занимает все области в том числе под рамками.
+}
+
+        header {
+            width: 100%;
+            height: 20%;
+            border: 3px solid lightskyblue;    
+            padding: 5px;       
+            box-sizing: border-box; /*margin и padding включены в width*/
+        }
+
+            .nav {
+                height: 100%;
+                border: 3px solid red;
+                display: flex;
+                
+                flex-direction: row;
+                flex-wrap: nowrap;                             
+                justify-content: space-between; // по горизонтали
+                align-items: center; // по вертикали
+                box-sizing: border-box;
+            }
+
+                .nav-element {
+                    width: 0; // флекс элементы
+                    height: 100%; // но не max-heigt - дочерний тогда вытянется
+                    flex-grow: 1; // заполняют весь ряд
+                    
+                    border: 3px solid red;                    
+                    
+                    box-sizing: border-box;
+                    margin: auto;
+
+                    text-align: center;
+                    position: relative;
+                }
+
+                .nav-menu {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-sizing: border-box;
+                }
+
+                    .nav-menu-item {
+                        border: 3px solid orange;
+                        color: @color-1;
+                        font-size: 30px;
+                    }
+
+                .nav-element img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);                    
+                    height: 70%;
+                    border-radius: 100%;
+                    border: 3px solid @color-1;
+                    box-shadow: 0 0 6px @color-2;
+                }
+
+                .nav-element audio {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .nav-menu {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+
+
+
+        main {
+            width: 100%;
+            height: 70%;
+            border: 3px solid yellow;
+            padding: 5px;            
+            box-sizing: border-box; /*margin и padding включены в width*/
+        }
+
+            .center {
+                width: 100%;
+                height: 100%;
+                border: 2px solid lightslategray;                
+                box-sizing: border-box;
+            }
+
+        footer {
+            width: 100%;
+            height: 10%;
+            border: 3px solid lightskyblue;
+            padding: 5px;            
+            box-sizing: border-box; /*margin и padding включены в width*/
+            background-size: 10% auto;
+        }
+
+
+
+
+
+
+

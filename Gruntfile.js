@@ -9,8 +9,9 @@ module.exports = function (grunt) {
                     paths: ['assets/css']
                 },
                 files: {
-                    'css/1.css': 'less/1.less',
-                    'css/2.css': 'less/2.less'
+                    'css/style.css': 'less/style.less',
+                    'css/normalize.css': 'less/normalize.less',
+                    'css/reset.css': 'less/reset.less'
                 }
             }
         },
@@ -20,6 +21,8 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['less']);
 
 };
+
+
 
 
 

@@ -10,19 +10,24 @@
     </head>
 
     <body>
-        <header>
-            <div class="line">
-                <img class="logo" src="/img/logo.jpg" alt="logo">
-                <br>
+        <header class="header">
+            <nav class="nav">
 
-                <form action="https://dzen.ru/" method="post">
-                    <label for="text">Введите запрос:</label>
-                    <input type="text" name="text" id="text">
-                    <button type="submit">Найти</button>
-                </form>
+                <ul class="menu nav-menu nav-element">
+                    <li class="nav-menu-item">Home</li>
+                    <li class="nav-menu-item">Contact</li>
+                    <li class="nav-menu-item">Language</li>
+                </ul>
 
-            </div>
+                <div class="logo header-logo nav-element">
+                    <img src="img/logo.jpg" alt="логотип">                    
+                </div>
 
+                <div class="music nav-music nav-element">
+                    <audio src="audio/earthlings-grass_at_home.mp3" controls></audio>
+                </div>
+
+            </nav>
         </header>
 
         <main>
